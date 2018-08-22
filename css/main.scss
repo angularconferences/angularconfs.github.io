@@ -6,7 +6,6 @@ $baseurl: '{{ site.baseurl }}/images';
 @import 'libs/vars';
 @import 'libs/functions';
 @import 'libs/mixins';
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic,800,800italic');
 @import 'libs/skel';
 @include skel-breakpoints(
   (
@@ -966,7 +965,8 @@ button,
   }
   .formerize-placeholder {
     color: _palette($p, fg-light) !important;
-  } // Icon
+  }
+  // Icon
   .icon {
     &.major {
       border-color: _palette($p, border);
@@ -1007,8 +1007,7 @@ button,
         }
       }
     }
-  }
-  // Button
+  } // Button
   input[type='submit'],
   input[type='reset'],
   input[type='button'],
