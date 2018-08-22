@@ -965,8 +965,7 @@ button,
   }
   .formerize-placeholder {
     color: _palette($p, fg-light) !important;
-  }
-  // Icon
+  } // Icon
   .icon {
     &.major {
       border-color: _palette($p, border);
@@ -1007,7 +1006,8 @@ button,
         }
       }
     }
-  } // Button
+  }
+  // Button
   input[type='submit'],
   input[type='reset'],
   input[type='button'],
@@ -1633,7 +1633,7 @@ body.is-mobile {
       border-left: solid 1px _palette(fg-light);
       display: inline-block;
       line-height: 1em;
-      margin-left: 1em;
+      margin-left: 4em;
       padding-left: 1em;
       @media screen and (max-width: 735px) {
         text-align: center;
@@ -1642,7 +1642,6 @@ body.is-mobile {
       }
       &:first-child {
         border-left: 0;
-        margin-left: 0;
         padding-left: 0;
       }
       a {
@@ -1662,7 +1661,7 @@ body.is-mobile {
     img {
       height: 30px;
       margin: -1em 0 -1em 1em;
-      @media screen and (max-width: 600px) {
+      @media screen and (max-width: 480px) {
         margin: 1em 35% !important;
       }
     }
