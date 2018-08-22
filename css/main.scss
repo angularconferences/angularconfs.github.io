@@ -965,7 +965,8 @@ button,
   }
   .formerize-placeholder {
     color: _palette($p, fg-light) !important;
-  } // Icon
+  }
+  // Icon
   .icon {
     &.major {
       border-color: _palette($p, border);
@@ -1006,8 +1007,7 @@ button,
         }
       }
     }
-  }
-  // Button
+  } // Button
   input[type='submit'],
   input[type='reset'],
   input[type='button'],
@@ -1629,13 +1629,17 @@ body.is-mobile {
     font-size: 0.8em;
     letter-spacing: _size(letter-spacing-alt);
     list-style: none;
-    padding: 0 0 0 5em;
-    li {
+    p {
       border-left: solid 1px _palette(fg-light);
       display: inline-block;
       line-height: 1em;
       margin-left: 1em;
       padding-left: 1em;
+      @media screen and (max-width: 735px) {
+        text-align: center;
+        margin-left: 0;
+        padding-left: 0;
+      }
       &:first-child {
         border-left: 0;
         margin-left: 0;
@@ -1653,6 +1657,13 @@ body.is-mobile {
         line-height: 1.65em;
         margin: 0;
         padding: 0.5em 0;
+      }
+    }
+    img {
+      height: 30px;
+      margin: -1em 0 -1em 1em;
+      @media screen and (max-width: 600px) {
+        margin: 1em 35% !important;
       }
     }
   }

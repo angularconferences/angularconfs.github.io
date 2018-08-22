@@ -1,12 +1,14 @@
 <!-- Footer -->
 <footer id="footer">
-    <ul class="copyright">
-      <li>&copy; {% assign thisyear = site.time | date: "%Y" %}
+    <div class="copyright">
+      <p>&copy; {% assign thisyear = site.time | date: "%Y" %}
       {% if site.first_published %}
         {% capture diff %}{{ site.first_published | minus:thisyear }}{% endcapture %}
         {% if diff contains '-' %}{{ site.first_published }},{% endif %}
       {% endif %}
-      {{ thisyear }}</li>
-    </ul>
+      {{ thisyear }},
+      powered by </p>
+        <a href="https://ultimateangular.com/"><img src="/assets/images/ua.svg"></a>
+      </span>
   </footer>
   
