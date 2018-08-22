@@ -196,6 +196,7 @@ pre {
 .img-responsive {
   max-width: 100%;
   height: 200px;
+  padding: 1em;
   display: block;
   margin: auto;
 } /* Section/Article */
@@ -955,8 +956,7 @@ button,
   }
   .formerize-placeholder {
     color: _palette($p, fg-light) !important;
-  }
-  // Icon
+  } // Icon
   .icon {
     &.major {
       border-color: _palette($p, border);
@@ -997,7 +997,8 @@ button,
         }
       }
     }
-  } // Button
+  }
+  // Button
   input[type='submit'],
   input[type='reset'],
   input[type='button'],
