@@ -965,8 +965,7 @@ button,
   }
   .formerize-placeholder {
     color: _palette($p, fg-light) !important;
-  }
-  // Icon
+  } // Icon
   .icon {
     &.major {
       border-color: _palette($p, border);
@@ -1007,7 +1006,8 @@ button,
         }
       }
     }
-  } // Button
+  }
+  // Button
   input[type='submit'],
   input[type='reset'],
   input[type='button'],
@@ -1281,6 +1281,9 @@ body.is-menu-visible {
   @include vendor('flex-direction', 'column');
   @include vendor('justify-content', 'center');
   background-image: url('/assets/images/bg.jpg');
+  @media screen and (max-width: 735px) {
+    background-image: url('/assets/images/bg-small.jpg');
+  }
   background-size: cover;
   cursor: default;
   height: 100vh;
