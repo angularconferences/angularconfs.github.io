@@ -85,6 +85,7 @@ i {
   font-style: italic;
   font-size: 18px;
   padding: 0.25em;
+  margin: 0.3em 0;
 }
 p {
   margin: 0 0 _size(element-margin) 0;
@@ -965,8 +966,7 @@ button,
   }
   .formerize-placeholder {
     color: _palette($p, fg-light) !important;
-  }
-  // Icon
+  } // Icon
   .icon {
     &.major {
       border-color: _palette($p, border);
@@ -1007,7 +1007,8 @@ button,
         }
       }
     }
-  } // Button
+  }
+  // Button
   input[type='submit'],
   input[type='reset'],
   input[type='button'],
