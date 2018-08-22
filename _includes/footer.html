@@ -6,8 +6,7 @@
         {% capture diff %}{{ site.first_published | minus:thisyear }}{% endcapture %}
         {% if diff contains '-' %}{{ site.first_published }},{% endif %}
       {% endif %}
-      {{ thisyear }},
-      {{ site.owner }}</li>
+      {{ thisyear }}</li>
     </ul>
   </footer>
   
