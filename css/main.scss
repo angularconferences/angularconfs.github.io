@@ -965,7 +965,8 @@ button,
   }
   .formerize-placeholder {
     color: _palette($p, fg-light) !important;
-  } // Icon
+  }
+  // Icon
   .icon {
     &.major {
       border-color: _palette($p, border);
@@ -1006,8 +1007,7 @@ button,
         }
       }
     }
-  }
-  // Button
+  } // Button
   input[type='submit'],
   input[type='reset'],
   input[type='button'],
@@ -1165,9 +1165,10 @@ body.is-menu-visible {
   .flex-col {
     flex-direction: column;
     width: 20%;
+    margin-bottom: 10%;
     @media screen and (max-width: 735px) {
       width: 40%;
-      margin-bottom: 10%;
+      margin-bottom: 6%;
     }
     .img-responsive {
       height: 200px;
