@@ -24,20 +24,14 @@
        $(document).ready(function () {
     
     $('#calendar').fullCalendar({
-        customButtons: {
-    myCustomButton: {
-      text: 'year',
-      click: function() {
-        alert('clicked the custom button!');
-      }
-    }
-  },
+        
         header: {
             left: 'prev,next today',
             center: 'title',
-            right: 'month, myCustomButton,listYear'
+            right: 'month,listYear'
         },
-    
+        defaultView: 'listYear',
+        
         displayEventTime: false, // don't show the time column in list view
     
         googleCalendarApiKey: 'AIzaSyDLQy4IGU9WSqL6Zp02wszoQUhPvfFxQz0',
@@ -58,3 +52,11 @@
     
     });
 </script>
+<style>
+.fc button .fc-icon {
+    top: -0.5em;
+}
+#one h2 {
+    color: #1976d2;
+}
+</style>
