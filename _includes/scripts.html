@@ -6,3 +6,55 @@
 <script src="{{ "/js/util.js" | prepend: site.baseurl }}" defer></script>
 <!--[if lte IE 8]><script src="{{ "/js/ie/respond.min.js" | prepend: site.baseurl }}"></script><![endif]-->
 <script src="{{ "/js/main.js" | prepend: site.baseurl }}" async></script>
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-KSSFT9J');</script>
+<!-- End Google Tag Manager -->
+
+    <!--FullCalendar-->
+<script src='/js/jquery.min.js'></script>
+<script src='/js/moment.min.js'></script>
+<script src='/fullcalendar/fullcalendar.js'></script>
+<script src='/fullcalendar/gcal.js'></script>
+
+<script>
+       $(document).ready(function () {
+    
+    $('#calendar').fullCalendar({
+        customButtons: {
+    myCustomButton: {
+      text: 'year',
+      click: function() {
+        alert('clicked the custom button!');
+      }
+    }
+  },
+        header: {
+            left: 'prev,next today',
+            center: 'title',
+            right: 'month, myCustomButton,listYear'
+        },
+    
+        displayEventTime: false, // don't show the time column in list view
+    
+        googleCalendarApiKey: 'AIzaSyDLQy4IGU9WSqL6Zp02wszoQUhPvfFxQz0',
+    
+        events: {googleCalendarId: 'anacidre.com_9dhp3ge4moaltd1b0h3rfg0eoc@group.calendar.google.com',
+        color: '#1976d2',  // an option!
+        textColor: 'white'},
+
+        
+        eventClick: function (event) {
+            // opens events in a popup window
+            window.open(event.url, 'gcalevent', 'width=800,height=600');
+            return false;
+        },
+    
+    });
+    
+    
+    });
+</script>
